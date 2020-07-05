@@ -1,0 +1,15 @@
+{
+  "name": "udagram",
+  "version": "1.0.0",
+  "description": "Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
