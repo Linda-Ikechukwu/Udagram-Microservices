@@ -1,14 +1,14 @@
 version: "3.8"
 services:
-   udagram-reverse-proxy:
-      image:linda96/udagram-reverse-proxy
-      ports:
-          - 8080:8080
-      restart: always
-      depends_on:
-        - backend-user
-        - backend-feed     
-   udagram-api-users:
+  udagram-reverse-proxy:
+    image: linda96/udagram-reverse-proxy
+    ports:
+      - 8080:8080
+    restart: always
+    depends_on:
+      - udagram-api-feed
+      - udagram-api-users     
+  udagram-api-users:
     image: linda96/udagram-api-users
     environment:
       POSTGRESS_USERNAME: $POSTGRESS_USERNAME
